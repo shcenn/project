@@ -42,8 +42,9 @@ img {
 }
 body {
     color: var(--black-text-color);
-    margin: 0;
+    margin: 0 auto;
     overflow-x:hidden;
+    align-items: center; 
 }
 section{
     padding: 4.5rem 0 1.5rem;
@@ -85,8 +86,6 @@ header {
     display: flex;
     position: absolute;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto; 
     font-size:1.1rem;
     font-weight: 600;
     color: var(--white-text-color);
@@ -100,8 +99,7 @@ header {
     display: flex;  
     position: relative;
     column-gap: 0.5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
     padding: 0.5rem;
 }
@@ -131,7 +129,7 @@ background: var(--dark-blue-color);
 width: 100%;
 min-height: 25rem;
 padding: 60px;
-text-align: center;
+text-align: center; 
 }
 .main{
     margin: 50px;
@@ -147,8 +145,7 @@ text-align: center;
     color: var(--white-text-color);
     margin-top: 30px;
 }
-/* Recipes */
-
+/* Recipes */ 
 .recipes{
     padding: 200px;
 }
@@ -282,30 +279,33 @@ text-align: center;
     background-color: var(--dark-blue-color);
     color: var(--white-text-color);
 }
-/* Response */
-@media (max-width:1080px) {
+
+/* Responsive Code */
+
+/* 2xlarge */
+@media (max-width:1536px) {
     header{
         padding: 18px 60px;
     }
     .recipes{
         padding: 0 100px;
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 150px;
     }
     .recipes h2{
         width: 600px;
         height: 50px;
         padding: 1rem;
-        margin-bottom: 150px;
     }
     .container img{
-        right: 6    0px;
+        right: 60px;
         width: 160px;
         height: 160px;
-        margin-bottom: 30px;
+        margin-bottom: 150px;
     }
 }
-@media (max-width:900px){
+/* xlarge */
+@media (max-width:1280px){
     header{
         padding: 18px 4%;
     }
@@ -319,10 +319,11 @@ text-align: center;
         right: 60px;
         width: 160px;   
         height: 160px;
-        margin-bottom: 30px;
+        margin-bottom: 150px;
     }
 }
-@media (max-width:650px){
+/* large */
+@media (max-width:1024px){
     .container img{
         right: 60px;
         width: 150px;
@@ -335,9 +336,10 @@ text-align: center;
     .logo .bx{
     }
 }
-@media (max-width:500px){
+/* medium */
+@media (max-width:768px){
     .container img{
-        right: 55px;
+        right: 60px;
         width: 150px;
         height: 150px;
         margin-bottom: 150px;
@@ -352,7 +354,8 @@ text-align: center;
         font-size: 15px;
     }
 }
-@media (max-width:300px){
+/* small */
+@media (max-width:640px){
     .container img{
         right: 50px;
         width: 150px;
@@ -362,3 +365,9 @@ text-align: center;
         font-size: 10px;
     }
 }
+/* xsmall */
+@media (max-width: 475px) {
+    .container {
+      width: 100%;
+    }
+  }
